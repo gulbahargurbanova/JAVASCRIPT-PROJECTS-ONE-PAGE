@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Glamour Gallery</h1>
+            <p>Step into the world of timeless beauty and elegance</p>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>At Glamour Gallery, we believe that makeup is an art form. Explore a collection of high-quality cosmetics that elevate your everyday look.</p>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Our Collection</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/img1.jpg" alt="Luxury Lipsticks" onclick="openModal(this)">
+                <p>Luxury Lipsticks</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img2.jpg" alt="Colorful Eyeshadow Palette" onclick="openModal(this)">
+                <p>Colorful Eyeshadow Palette</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img3.jpg" alt="Premium Brush Set" onclick="openModal(this)">
+                <p>Premium Brush Set</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <div class="modal" id="lightbox">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Glamour Gallery.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
