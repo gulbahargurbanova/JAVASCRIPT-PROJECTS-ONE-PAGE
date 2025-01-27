@@ -15,5 +15,3 @@ Usage
 Place images (named img1.jpg, img2.jpg, img3.jpg) in the images folder.
 
 Link the styles.css for design and script.js for functionality.
-
-Open index.html in your browser to view the site.
